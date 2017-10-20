@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Introduction to Python"
-description: "Posts are where we can highlight events, etc."
-category: Sample-Posts
-tags: [sample post, readability]
+description: "A quick introduction to Python"
+category: Python Tutorials
+tags: [python, tutorial]
 modified: 2017-10-20
 
 comments: false
