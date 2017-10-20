@@ -1,7 +1,7 @@
 title:            ECS@UW
 description:      The Electrochemical Society at the University of Washington
 logo:             logo-square.png
-disqus_shortname: shortname
+disqus_shortname:
 # Assign a default image for your site's header and footer
 default_bg:       default_bg.jpg
 search:           true
@@ -72,6 +72,8 @@ links:
     url: /categories
   - title: Tags
     url: /tags
+  - title: Notes
+    url: /notes
 
 # Sitemap configuration
 # https://github.com/kinnetica/jekyll-plugins
@@ -94,12 +96,15 @@ paginate_path: "/blog/:num/"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 collections:
-  posts:
+  tutorials:
     output: true
-    permalink: /blog/:title
+    permalink: /tutorials/:title
   pages:
     output: true
     permalink: /:title
+  notes:
+    output: true
+    permalink: /notes/:title
 
 kramdown:
   input: GFM

@@ -6,10 +6,10 @@ default_author:
   description:    The Electrochemical Socity at the University of Washington
   # Social networking links used in footer. Update and remove as you like.
   twitter: ECSatUW
-  facebook:
+  facebook: ECSatUW
   github: ECSatUW
   linkedin:
-  instagram:
+  instagram: ecs.at.uw
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
   # google_plus:    "http://plus.google.com/123123123123132123"
