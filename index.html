@@ -17,7 +17,7 @@ tags: [tags]
 		{% assign modifiedtime = post.modified | date: "%Y%m%d" %}
 		{% assign posttime = post.date | date: "%Y%m%d" %}
 
-		{% unless post.tags contains 'post' %}
+		{% unless post.tags contains 'mainpage' %}
 		{% if post.type == 'quote' %}
 <div class="row">
 	<article class="post col-md-10 col-md-offset-1">

@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Introduction to Python"
-description: "A quick introduction to Python"
-category: Python Tutorials
-tags: [python, tutorial]
-modified: 2017-10-20
+title: "Post with Large Feature Image and Text"
+description: "Custom written post descriptions are the way to go... if you're not lazy."
+category: Sample-Posts
+tags: [sample post, readability]
+modified: 2013-06-30
 
-comments: false
+<!-- imagefeature: tokyo.jpg -->
+comments: true
 share: true
 ---
 
