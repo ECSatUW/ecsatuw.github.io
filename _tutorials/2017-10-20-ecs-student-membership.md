@@ -2,7 +2,7 @@
 layout: post
 title: "Becoming an ECS Student Member"
 description: "Learn how to register as an ECS student member!"
-category: [Introduction]
+category: Introduction
 tags: [intro, membership]
 modified: 2017-10-20
 
