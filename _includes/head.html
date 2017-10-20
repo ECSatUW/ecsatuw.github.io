@@ -1,4 +1,4 @@
-<meta charset="utf-8"> 
+<meta charset="utf-8">
 
 {% if page.tags %}
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
@@ -20,6 +20,7 @@
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/style.css" />
 <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/syntax.css" />
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/profile-card.css" />
 
 {% if page.mathjax %}
 <!--Load Mathjax-->
@@ -42,7 +43,7 @@
                    autoNumber: "AMS",
                 },
                 unicode: {
-                   fonts: "STIXGeneral,'Arial Unicode MS'" 
+                   fonts: "STIXGeneral,'Arial Unicode MS'"
                 }
             },
             showProcessingMessages: false
