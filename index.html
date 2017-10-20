@@ -17,6 +17,7 @@ tags: [tags]
 		{% assign modifiedtime = post.modified | date: "%Y%m%d" %}
 		{% assign posttime = post.date | date: "%Y%m%d" %}
 
+		{% unless post.tags contains 'post' %}
 		{% if post.type == 'quote' %}
 <div class="row">
 	<article class="post col-md-10 col-md-offset-1">
@@ -98,15 +99,15 @@ tags: [tags]
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
 
 				{% if post.modified %}
-					{% if modifiedtime != posttime %} 
+					{% if modifiedtime != posttime %}
 				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 					{% endif %}
-				{% endif %} 
-				
+				{% endif %}
+
 				in <span class="post-tags">
-					
+
 				{% for tag in post.categories %}
-				
+
 				<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">
 					{{ tag | capitalize }}
 				</a>
@@ -142,13 +143,13 @@ tags: [tags]
 
 			<div class="post-info text-center small">
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
-			
+
 			{% if post.modified %}
-			
-				{% if modifiedtime != posttime %} 
+
+				{% if modifiedtime != posttime %}
 				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 				{% endif %}
-			{% endif %} 
+			{% endif %}
 				in <span class="post-tags">
 
 				{% for tag in post.categories %}
@@ -160,9 +161,9 @@ tags: [tags]
 					{% endunless %}
 				{% endfor %}
 				</span>
-				
+
 				{% if site.readtime %}
-				
+
 				&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 					{% if readtime > 1 and readtime < 1.5 %}
 					1 minute read
@@ -171,7 +172,7 @@ tags: [tags]
 					{% if readtime > 1.5 %}
 					<span class="time">{{ readtime }}</span> minutes read
 					{% endif %}
-					
+
 					{% if readtime < 1 %}
 					Less than 1 minute read
 					{% endif %}
@@ -222,7 +223,7 @@ tags: [tags]
 				<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a>
 			</figure>
 			{% endif %}
-			
+
 			{% if post.link %}
 			<h2 class="post-title text-center super lighter">
 				<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
@@ -235,18 +236,18 @@ tags: [tags]
 					</a>
 			{% endif %}
 			</h2>
-				
+
 			<div class="post-info text-center small">
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
-				
+
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
 			and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 				{% endif %}
-			{% endif %} 
-			
+			{% endif %}
+
 			in <span class="post-tags">
-				
+
 			{% for tag in post.categories %}
 			<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">
 				{{ tag | capitalize }}
@@ -256,7 +257,7 @@ tags: [tags]
 			{% endunless %}
 			{% endfor %}
 			</span>
-			
+
 			{% if site.readtime %}
 				&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 				{% if readtime > 1 and readtime < 1.5 %}
@@ -290,8 +291,8 @@ tags: [tags]
 	</article>
 </div>
 		{% endif %}
-	        
-			
+
+
 		{% if post.type != 'video' and post.type != 'status' and post.type != 'quote' and post.type != 'photo' %}
 <div class="row">
 	<article class="post post col-md-8 col-md-offset-2">
@@ -299,7 +300,7 @@ tags: [tags]
 		{% if post.featured %}
 			<div class="cursive">this post is featured</div>
 		{% endif %}
-		
+
 		{% if post.link %}
 			<h2 class="post-title text-center super lighter">
 				<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
@@ -307,7 +308,7 @@ tags: [tags]
 				</a>
 		{% else %}
 				<h2 class="post-title text-center super lighter bordered-bottom">
-					<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> 
+					<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
 		{% endif %}
 			</h2>
 
@@ -318,10 +319,10 @@ tags: [tags]
 				{% if modifiedtime != posttime %}
 					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 				{% endif %}
-			{% endif %} 
-				
+			{% endif %}
+
 			in <span class="post-tags">
-				
+
 			{% for tag in post.categories %}
 				<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">
 					{{ tag | capitalize }}
@@ -331,7 +332,7 @@ tags: [tags]
 			{% endunless %}
 			{% endfor %}
 			</span>
-				
+
 			{% if site.readtime %}
 			&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 				{% if readtime > 1 and readtime < 1.5 %}
@@ -351,8 +352,8 @@ tags: [tags]
 		</header>
 
 		<div class="post-body bordered-bottom">
-			{% assign excerptsize = post.excerpt | number_of_words %} 
-			
+			{% assign excerptsize = post.excerpt | number_of_words %}
+
 		{% if excerptsize <= 100 and excerptsize >= 50 %}
 			<p class="lead">{{ post.excerpt | strip_html }}&hellip;</p>
 		{% else %}
@@ -373,6 +374,7 @@ tags: [tags]
 	</article>
 </div>
 		{% endif %}
+		{% endunless %}
 	{% endfor %}
 
 	{% if paginator.total_pages > 1 %}
@@ -387,7 +389,7 @@ tags: [tags]
 			{% endif %}
 		{% endif %}
     	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}   
+		{% if paginator.next_page %}
     		<a class="older-posts" href="{{ site.url }}/blog/{{ paginator.next_page }}">Older Posts &rarr;</a>
  		{% endif %}
 		</nav>
@@ -485,7 +487,7 @@ tags: [tags]
 				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 				{% endif %}
 			{% endif %}
-			
+
 				in <span class="post-tags">
 				{% for tag in post.categories %}
 					<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">
@@ -525,7 +527,7 @@ tags: [tags]
 					and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 					{% endif %}
 				{% endif %}
-				
+
 				in <span class="post-tags">
 				{% for tag in post.categories %}
 					<a href="{{ site.url }}/categories/index.html#{{ post.categories | cgi_encode }}" data-toggle="tooltip" title="Other posts from the {{ tag | capitalize }} category" rel="tag">
@@ -536,7 +538,7 @@ tags: [tags]
 				{% endunless %}
 				{% endfor %}
 				</span>
-				
+
 				{% if site.readtime %}
 				&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 					{% if readtime > 1 and readtime < 1.5 %}
@@ -554,7 +556,7 @@ tags: [tags]
 		</header>
 
 		<div class="post-body bordered-bottom">
-		{% if post.video %} 
+		{% if post.video %}
 			{% assign video_embed = post.video | remove:'https://www.youtube.com/watch?v=' %}
 			<p>
 				<iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0"
@@ -594,7 +596,7 @@ tags: [tags]
 				<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.imagefeature }}" alt="{{ post.title }}" itemprop="image"></a>
 			</figure>
 		{% endif %}
-		
+
 		{% if post.link %}
 			<h2 class="post-title text-center super lighter">
 				<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
@@ -610,7 +612,7 @@ tags: [tags]
 
 			<div class="post-info text-center small">
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
-			
+
 			{% if post.modified %}
 				{% if modifiedtime != posttime %}
 				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
@@ -668,7 +670,7 @@ tags: [tags]
 		{% if post.featured %}
 			<div class="cursive">this post is featured</div>
 		{% endif %}
-		
+
 		{% if post.link %}
 			<h2 class="post-title text-center super lighter">
 				<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
@@ -682,7 +684,7 @@ tags: [tags]
 			<div class="post-info text-center small">
 				<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>
 			{% if post.modified %}
-				{% if modifiedtime != posttime %} 
+				{% if modifiedtime != posttime %}
 				and <code>last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time></code>
 				{% endif %}
 			{% endif %}
@@ -700,7 +702,7 @@ tags: [tags]
 
 			{% if site.readtime %}
 				&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
-				
+
 				{% if readtime > 1 and readtime < 1.5 %}
 					1 minute read
 				{% endif %}
@@ -708,7 +710,7 @@ tags: [tags]
 				{% if readtime > 1.5 %}
 					<span class="time">{{ readtime }}</span> minutes read
 				{% endif %}
-				
+
 				{% if readtime < 1 %}
 					Less than 1 minute read
 				{% endif %}
@@ -719,7 +721,7 @@ tags: [tags]
 
 		<div class="post-body bordered-bottom">
 			{% assign excerptsize = post.excerpt | number_of_words %}
-			
+
 		{% if excerptsize <= 100 and excerptsize >= 50 %}
 			<p class="lead">{{ post.excerpt | strip_html }}&hellip;</p>
 		{% else %}
@@ -742,5 +744,5 @@ tags: [tags]
 </div>
 		{% endif %}
 
-	{% endfor %}  
+	{% endfor %}
 {% endif %}
