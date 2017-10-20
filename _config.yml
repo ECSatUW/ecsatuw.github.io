@@ -96,6 +96,9 @@ paginate_path: "/blog/:num/"
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 collections:
+  posts:
+    output: true
+    permalink: /posts/:title
   tutorials:
     output: true
     permalink: /tutorials/:title
