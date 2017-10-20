@@ -2021,7 +2021,8 @@ a#slide:hover {
 }
 
 a#slide:after {
-  content: "F";
+  font-family: FontAwesome;
+  content: "\f0c9";
 }
 
 a#slide.slide:after {
@@ -2223,7 +2224,7 @@ body.slide {
 /*      Responsive      */
 
 @media screen and (max-width:1140px) {
-    
+
   #header,
     #posts-container,
     .entry .text,
@@ -2256,7 +2257,7 @@ body.slide {
 }
 
 @media screen and (max-width:500px) {
-    
+
   a#slide {
     position: absolute;
   }
