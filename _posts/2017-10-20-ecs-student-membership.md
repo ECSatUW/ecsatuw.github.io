@@ -3,6 +3,7 @@ layout: post
 title: "Becoming an ECS Student Member"
 description: "Learn how to register as an ECS student member!"
 author: Matt Murbach
+authorlink: http://mattmurbach.com
 category: Introduction
 tags: [intro, membership, tutorial]
 modified: 2017-10-20
