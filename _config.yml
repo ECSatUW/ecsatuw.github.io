@@ -43,10 +43,10 @@ jekyll-archives:
 # Owner/author information
 author:
   name:           ECS@UW
-  picture:
+  picture:        logo-webpage.png
   email:          essc@uw.edu
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Some Details about yourself
+  description:    The Electrochemical Society Student Chapter at the University of Washington
   # Social networking links used in footer. Update and remove as you like.
   twitter: ECSatUW
   facebook: ECSatUW
@@ -58,7 +58,7 @@ author:
   google_plus:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:
+google_analytics: UA-109342383-1
 google_verify:
 
 # Links to include in top navigation
