@@ -100,8 +100,6 @@ a:hover {
 }
 /* - Lead text - */
 .lead {
-  font-size: 21px;
-  line-height: 2em;
 }
 /* - Blockquote - */
 blockquote {
@@ -385,7 +383,6 @@ pre {
   }
 
   .lead {
-    font-size: 16px;
   }
 }
 
@@ -901,7 +898,6 @@ body button {
 }
 
 .lead {
-  font-weight: 400;
 }
 
 h1,
