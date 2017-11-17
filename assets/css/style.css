@@ -1,10 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
 
-@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,400italic,700);
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,100,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,100,700);
 
-@import url(http://fonts.googleapis.com/css?family=Sacramento);
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 /* ------------------------ */
@@ -98,8 +100,6 @@ a:hover {
 }
 /* - Lead text - */
 .lead {
-  font-size: 21px;
-  line-height: 2em;
 }
 /* - Blockquote - */
 blockquote {
@@ -123,6 +123,14 @@ blockquote:before {
   font-size: 34px;
   text-align: center;
 }
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 1.2em;
+  text-align: center;
+}
+
 /* - Form elements - */
 select,
 textarea,
@@ -278,7 +286,7 @@ pre {
 }
 
 .hyper {
-  font-size: 72px;
+  font-size: 60px;
   font-weight: bold;
   text-align: center;
   line-height: 1;
@@ -351,7 +359,7 @@ pre {
   }
 
   .hyper {
-    font-size: 60px;
+    font-size: 48px;
   }
 
   .small-screen-center {
@@ -370,12 +378,11 @@ pre {
   }
 
   .hyper {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 1em;
   }
 
   .lead {
-    font-size: 16px;
   }
 }
 
@@ -417,7 +424,7 @@ pre {
   }
 
   .hyper {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 /* ------------ */
@@ -891,7 +898,6 @@ body button {
 }
 
 .lead {
-  font-weight: 400;
 }
 
 h1,
