@@ -65,7 +65,7 @@
                             {% endfor %}
                                 </span>
 
-                            {% if site.readtime %}&nbsp;
+                            <!--{% if site.readtime %}&nbsp;
                                 <span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 
                             {% if readtime > 1 and readtime < 1.5 %}
@@ -81,7 +81,7 @@
                             {% endif %}
 
                                 </span>
-                            {% endif %}
+                            {% endif %}-->
                             </div>
 
                     </header>
@@ -92,7 +92,7 @@
                         <iframe width="940" height="529" src="//www.youtube.com/embed/{{ video_embed }}?theme=light&amp;color=white" frameborder="0" allowfullscreen> </iframe>
                     {% endif %}
 
-                        {{ content }}
+                        {{ page.content }}
 
                         <br>
 

@@ -57,7 +57,7 @@ tags: [tags]
 					{% endfor %}
 					</span>
 
-					{% if site.readtime %}
+					<!--{% if site.readtime %}
 					&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 						{% if readtime > 1 and readtime < 1.5 %}
 							1 minute read
@@ -71,28 +71,26 @@ tags: [tags]
 							Less than 1 minute read
 						{% endif %}
 						</span>
-					{% endif %}
+					{% endif %}-->
 					</div>
 				</header>
 
 				<div class="post-body bordered-bottom">
-					{% assign excerptsize = post.excerpt | number_of_words %}
+					<!--{% assign excerptsize = post.excerpt | number_of_words %}
 
 					{% if excerptsize <= 50 %}
 						<p class="lead">{{ post.excerpt | strip_html }}&hellip;</p>
 					{% else %}
 						<p>{{ post.content | strip_html | truncatewords:50 }}&hellip;</p>
-					{% endif %}
+					{% endif %}-->
+
 					<div class="text-center">
-					{% if post.description %}
-						<a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
+					{{ post.description }}
+					<br></br>
+						<a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" class="more-link btn btn-danger btn-large">
 							<i class="fa fa-link"></i> read more...
 						</a>
-					{% else %}
-						<a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-							<i class="fa fa-link"></i> read more...
-						</a>
-					{% endif %}
+
 					</div>
 				</div>
 			</article>
@@ -162,7 +160,7 @@ tags: [tags]
 					{% endfor %}
 					</span>
 
-					{% if site.readtime %}
+					<!--{% if site.readtime %}
 						&nbsp;<span class="post-tags"><i class="fa fa-clock-o"></i>&nbsp;
 
 						{% if readtime > 1 and readtime < 1.5 %}
@@ -177,7 +175,7 @@ tags: [tags]
 							Less than 1 minute read
 						{% endif %}
 						</span>
-					{% endif %}
+					{% endif %}-->
 					</div>
 				</header>
 

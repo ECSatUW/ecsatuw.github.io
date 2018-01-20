@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     {% include head.html %}
 </head>
@@ -31,17 +31,17 @@
                         {% endif %}
 
                         {% if site.readtime %}
-                            &nbsp; <span class="post-tags"> <i class="fa fa-clock-o"></i> &nbsp; 
+                            &nbsp; <span class="post-tags"> <i class="fa fa-clock-o"></i> &nbsp;
                             {% if readtime > 1 and readtime < 1.5 %}
                                 1 minute read
                             {% endif %}
-                            {% if readtime > 1.5 %} 
-                                <span class="time"> {{ readtime }} </span> minutes read 
-                            {% endif %} 
-                            {% if readtime < 1 %} 
+                            {% if readtime > 1.5 %}
+                                <span class="time"> {{ readtime }} </span> minutes read
+                            {% endif %}
+                            {% if readtime < 1 %}
                                 Less than 1 minute read
                             {% endif %}
-                            </span> 
+                            </span>
                         {% endif %}
                         </div>
                     </header>
@@ -49,7 +49,7 @@
                     <div class="page-body" itemprop="description">
                         {{ content }}
                     </div>
-                    
+
                 </article>
             </div>
         </div>
@@ -57,6 +57,6 @@
 
     {% include footer.html %}
 
-    {% include scripts.html %}  
+    {% include scripts.html %}
 </body>
 </html>
