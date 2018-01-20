@@ -14,6 +14,7 @@ share: false
 
 Whether it's for access to journal articles, lower prices to register for conferences, or to apply for awards and travel grants, there are plenty of reasons to become an ECS member.
 While individual student membership is discounted to $30, one of the benefits of joining the ECS@UW student chapter is that you can get a student membership **for free!**
+<!-- more -->
 
 ## Registering as a student chapter member
 
