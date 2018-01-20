@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Getting started with Python"
-description: "Python Tutorial, Part 1. Learn how to get Python installed using Conda"
+title: "Python Tutorial, Part 1. Getting started with Python"
+description: "Learn how to install Python using Conda"
 category: Python Tutorials
 tags: [python, tutorial, intro]
 
