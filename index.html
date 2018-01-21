@@ -26,12 +26,13 @@ tags: [tags]
 				{% endif %}
 
 				{% if post.link %}
-					<h2 class="post-title text-center super lighter">
+					<h1 class="post-title text-center lighter">
 						<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
 							<i class="fa fa-link"></i> {{ post.title }}
 						</a>
+					</h1>
 				{% else %}
-						<h2 class="post-title text-center super lighter bordered-bottom">
+						<h1 class="post-title text-center lighter bordered-bottom">
 							<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
 				{% endif %}
 					</h2>
@@ -132,15 +133,15 @@ tags: [tags]
 				{% endif %}
 
 				{% if post.link %}
-					<h3 class="post-title text-center super lighter">
+					<h1 class="post-title text-center lighter">
 						<a href="{{ site.url }}{{ post.url }}" style="color: #fff; background-color: #45ADA8; border-radius: 4px; padding: 10px">
 							<i class="fa fa-link"></i> {{ post.title }}
 						</a>
-					</h3>
+					</h1>
 				{% else %}
-					<h3 class="post-title text-center super lighter bordered-bottom">
+					<h1 class="post-title text-center lighter bordered-bottom">
 						<a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a> {% endif %}
-					</h3>
+					</h1>
 
 					<div class="post-info text-center small">
 						<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>

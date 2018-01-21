@@ -30,7 +30,7 @@ Installation instructions for your OS can be found at [https://conda.io/minicond
 
 *Note:* If you want to be able to use the conda command in the Command Prompt or bash shell, check the Add Conda to PATH box during installation.
 
-After you have installed conda, you can run the following to update and test your installation:
+After you have installed conda, you can run the following commands in your Terminal/Command Prompt/git bash to update and test your installation:
 
 1. Update conda’s listing of packages for your system: `conda update conda`
 2. Test your installation: `conda list`
