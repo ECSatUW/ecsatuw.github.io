@@ -16,7 +16,7 @@ share: true
 
 This page is the first post in a series of introductory python tutorials:
 1. Installing Python using Conda - *this tutorial*
-2. [Getting started with Jupyter]({% post_url 2017-11-09-getting-started-with-Jupyter %})
+2. [Getting started with Jupyter]({% post_url 2018-01-25-getting-started-with-Jupyter %})
 3. [Using Python packages]()
 4. [Working with data]()
 5. [Making figures in Python]()
@@ -27,6 +27,8 @@ To begin using Python, we first need to install it. For these tutorials, we will
 
 If you do not already have Python 3 installed on your computer (or even if you do, but don't use Conda), we recommend using installing miniconda.
 Installation instructions for your OS can be found at [https://conda.io/miniconda.html](https://conda.io/miniconda.html).
+
+*Note:* If you want to be able to use the conda command in the Command Prompt or bash shell, check the Add Conda to PATH box during installation.
 
 After you have installed conda, you can run the following to update and test your installation:
 
@@ -49,4 +51,4 @@ Try executing the following statements in this interactive environment:
 To exit out of this interactive Python session, type `exit()`.
 
 If you've made it this far, congratulations!
-You now have Python 3 and Conda installed on your computer and you're ready to move on to [Part 2. Getting Started with Jupyter]({% post_url 2017-11-09-getting-started-with-Jupyter %}).
+You now have Python 3 and Conda installed on your computer and you're ready to move on to [Part 2. Getting Started with Jupyter]({% post_url 2018-01-25-getting-started-with-Jupyter %}).
